@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#091b3b">
+    <meta name="description" content="Một bông hoa và vài lời yêu thương dành tặng em ngày Phụ nữ Việt Nam 20/10.">
+    <title>Một chút yêu thương | 20/10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="phone-scene">
+        <div class="stars" id="stars" aria-hidden="true"></div>
+
+        <header class="intro">
+            <p class="eyebrow">20 tháng 10 · Ngày Phụ nữ Việt Nam</p>
+            <h1>Chúc mừng ngày 20/10</h1>
+        </header>
+
+        <section class="flower-stage" aria-label="Bông hoa chúc mừng ngày 20 tháng 10">
+            <div class="flower-art-wrap">
+                <svg class="flower-art" viewBox="0 0 300 360" role="img" aria-labelledby="flower-title flower-description">
+                    <title id="flower-title">Bó hoa hồng đung đưa</title>
+                    <desc id="flower-description">Một bó gồm năm bông hoa hồng với cánh hoa mềm mại, thân xanh và lá non.</desc>
+                    <defs>
+                        <linearGradient id="stem-gradient" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0" stop-color="#72c98d"/>
+                            <stop offset=".48" stop-color="#a9edb0"/>
+                            <stop offset="1" stop-color="#54b978"/>
+                        </linearGradient>
+                        <linearGradient id="leaf-gradient" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0" stop-color="#a8efa3"/>
+                            <stop offset=".55" stop-color="#5ecb83"/>
+                            <stop offset="1" stop-color="#2c956b"/>
+                        </linearGradient>
+                        <radialGradient id="petal-back" cx=".42" cy=".34" r=".75">
+                            <stop offset="0" stop-color="#ffd0e2"/>
+                            <stop offset=".58" stop-color="#f58db5"/>
+                            <stop offset="1" stop-color="#c84d83"/>
+                        </radialGradient>
+                        <radialGradient id="petal-mid" cx=".38" cy=".3" r=".8">
+                            <stop offset="0" stop-color="#ffe1ed"/>
+                            <stop offset=".6" stop-color="#ff9ec3"/>
+                            <stop offset="1" stop-color="#dc568d"/>
+                        </radialGradient>
+                        <radialGradient id="petal-front" cx=".35" cy=".25" r=".8">
+                            <stop offset="0" stop-color="#fff0f5"/>
+                            <stop offset=".56" stop-color="#ffb2d0"/>
+                            <stop offset="1" stop-color="#e5689b"/>
+                        </radialGradient>
+                        <radialGradient id="core-gradient" cx=".35" cy=".25" r=".8">
+                            <stop offset="0" stop-color="#fff1d1"/>
+                            <stop offset=".46" stop-color="#ffd56f"/>
+                            <stop offset="1" stop-color="#e39c42"/>
+                        </radialGradient>
+                        <filter id="soft-glow" x="-100%" y="-100%" width="300%" height="300%">
+                            <feGaussianBlur stdDeviation="3"/>
+                        </filter>
+                    </defs>
+
+                    <!-- Stem, leaves, and small thorns. -->
+                    <path class="bouquet-stem" d="M150 340 C130 286 91 222 60 148"/>
+                    <path class="bouquet-stem" d="M150 340 C138 270 124 173 110 74"/>
+                    <path class="stem" d="M151 340 C145 291 157 248 150 204 C146 177 151 157 150 140"/>
+                    <path class="bouquet-stem" d="M150 340 C162 270 176 173 190 74"/>
+                    <path class="bouquet-stem" d="M150 340 C170 286 209 222 240 148"/>
+                    <path class="leaf leaf-left" d="M148 267 C116 226 76 235 82 259 C87 283 122 293 149 279 C129 267 113 257 94 252 C116 253 132 262 148 274Z"/>
+                    <path class="leaf leaf-right" d="M153 225 C180 188 218 191 220 214 C221 237 190 254 155 239 C174 229 193 217 211 209 C190 211 174 219 155 232Z"/>
+                    <path d="M146 299 l-10 -6 M156 282 l9 -6" stroke="#b6f0a6" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M135 291 Q150 300 165 291 L160 310 Q150 316 140 310Z" fill="#df7da1" stroke="#ffd7e4" stroke-width="1.5"/>
+                    <path d="M141 296 C127 284 123 299 139 303 M159 296 C173 284 177 299 161 303" fill="none" stroke="#f4a4be" stroke-width="5" stroke-linecap="round"/>
+                    <circle cx="150" cy="299" r="4" fill="#ffd9e6"/>
+
+                    <!-- Layered rose petals create a soft, hand-drawn flower silhouette. -->
+                    <use class="rose-head bouquet-rose" href="#rose-head-master" transform="translate(-37.5 59) scale(.65)"/>
+                    <use class="rose-head bouquet-rose" href="#rose-head-master" transform="translate(142.5 59) scale(.65)"/>
+                    <use class="rose-head bouquet-rose" href="#rose-head-master" transform="translate(12.5 -16) scale(.65)"/>
+                    <use class="rose-head bouquet-rose" href="#rose-head-master" transform="translate(92.5 -16) scale(.65)"/>
+                    <g id="rose-head-master" class="rose-head" aria-hidden="true" transform="translate(150 140) scale(1.18) translate(-150 -140)">
+                        <ellipse class="petal petal-back" cx="150" cy="91" rx="31" ry="53"/>
+                        <ellipse class="petal petal-back" cx="124" cy="111" rx="32" ry="47" transform="rotate(-38 124 111)"/>
+                        <ellipse class="petal petal-back" cx="176" cy="111" rx="32" ry="47" transform="rotate(38 176 111)"/>
+                        <ellipse class="petal petal-back" cx="119" cy="140" rx="31" ry="42" transform="rotate(-62 119 140)"/>
+                        <ellipse class="petal petal-back" cx="181" cy="140" rx="31" ry="42" transform="rotate(62 181 140)"/>
+                        <ellipse class="petal petal-back" cx="134" cy="153" rx="31" ry="42" transform="rotate(-24 134 153)"/>
+                        <ellipse class="petal petal-back" cx="166" cy="153" rx="31" ry="42" transform="rotate(24 166 153)"/>
+
+                        <ellipse class="petal petal-mid" cx="150" cy="99" rx="24" ry="42"/>
+                        <ellipse class="petal petal-mid" cx="130" cy="118" rx="25" ry="37" transform="rotate(-39 130 118)"/>
+                        <ellipse class="petal petal-mid" cx="170" cy="118" rx="25" ry="37" transform="rotate(39 170 118)"/>
+                        <ellipse class="petal petal-mid" cx="132" cy="142" rx="25" ry="33" transform="rotate(-58 132 142)"/>
+                        <ellipse class="petal petal-mid" cx="168" cy="142" rx="25" ry="33" transform="rotate(58 168 142)"/>
+
+                        <ellipse class="petal petal-front" cx="150" cy="108" rx="17" ry="30"/>
+                        <ellipse class="petal petal-front" cx="139" cy="124" rx="18" ry="27" transform="rotate(-38 139 124)"/>
+                        <ellipse class="petal petal-front" cx="161" cy="124" rx="18" ry="27" transform="rotate(38 161 124)"/>
+                        <path class="petal petal-front" d="M132 137 Q150 116 168 137 Q169 160 150 169 Q131 160 132 137Z"/>
+                        <path d="M143 143 C134 134 145 124 153 132 C162 123 170 137 161 146 C155 152 150 156 149 156Z" fill="#c84178" opacity=".68"/>
+                        <circle class="flower-core" cx="151" cy="140" r="8"/>
+                        <circle class="flower-glint" cx="148" cy="137" r="4"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <button class="open-card" id="open-card" type="button">Mở tấm thiệp ♡</button>
+        <p class="footer-note">Gửi người phụ nữ đẹp nhất hành tinh một chút dịu dàng ♡</p>
+
+        <section class="greeting-card" id="greeting-card" role="dialog" aria-modal="true" aria-labelledby="card-title" hidden>
+            <div class="falling-petals" id="falling-petals" aria-hidden="true"></div>
+            <article class="greeting-paper">
+                <p class="card-flower" aria-hidden="true">🌷</p>
+                <h2 id="card-title" data-typewriter>Chúc mừng 20/10</h2>
+                <p data-typewriter>Chúc 'nóc nhà' quyền lực nhất của gia đình mình ngày 20/10 thật rực rỡ! Con chúc mẹ sức khỏe dồi dào, luôn xinh đẹp rạng ngời và mãi luôn bao dung cho đứa con trai hay thức đêm cày code, chạy deadline này nhé!.</p>
+                <p data-typewriter>Mong mỗi ngày của mẹ đều ngập tràn niềm vui, những điều dịu dàng và thật nhiều người thương quý.</p>
+                <p class="signature" data-typewriter> Mẹ mãi là tuyệt nhất! ♡</p>
+                <button class="close-card" id="close-card" type="button">Đóng thiệp</button>
+            </article>
+        </section>
+    </main>
+
+    <audio id="background-music" preload="metadata">
+        <source src="audio/co-chac-yeu-la-day.mp3" type="audio/mpeg">
+    </audio>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
